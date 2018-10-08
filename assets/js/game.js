@@ -5,33 +5,56 @@ var wins = 0;
 var loses = 0;
 
 // generate random number for player to match with
-var gameNum = Math.floor(Math.random() * (70 - 20) + 20);
+var gameNum = Math.floor(Math.random() * (70 - 40) + 40);
+var game = gameNum;
+
+
 
 // DISPLAY ITEMS
-
+var disp = document.getElementById("#numbers");
 // display generated random number
 // randNum = document.innerHTML("number");
-console.log("randNum", gameNum);
-// -display crystals-
+console.log("Game Number", gameNum);
+// display number on HTML page
+// disp.innerHTML = game;
 
 
 // CRYSTAL LOGIC
 // add logic to randomize the score value of the crystals for every doc reload
-// random number set for crystals
-var crysNum = Math.floor(Math.random() * (15 - 5) + 5);
-console.log("randNum for Crystal", crysNum);
-/* with each click on crystal, update score++ based on random crystNum value assigned to each cyrstal */
-$("#cryst1").click(function(){
 
+// Random numbers for crystals ranging from 5 to 15
+function crysNum1() {
+    return Math.floor(Math.random() * (15 - 5) + 5);
+}
+function crysNum2() {
+    return Math.floor(Math.random() * (15 - 5) + 5);
+}
+function crysNum3() {
+    return Math.floor(Math.random() * (15 - 5) + 5);
+}
+function crysNum4() {
+    return Math.floor(Math.random() * (15 - 5) + 5);
+}
+
+console.log("Number for Crystal 1", crysNum1());
+console.log("Number for Crystal 2", crysNum2());
+console.log("Number for Crystal 3", crysNum3());
+console.log("Number for Crystal 4", crysNum4());
+
+/* with each click on crystal, update score++ based on random crystNum value assigned to each cyrstal */
+
+// Assigned each crystal the crysNum() function
+$("#cryst1").click(function(){
+    crysNum1()
 });
 $("#cryst2").click(function(){
-
+    crysNum2()
 });
 $("#cryst3").click(function(){
-
+    crysNum3()
 });
 $("#cryst4").click(function(){
-
+    crysNum4()
 });
 
 // GAME LOGIC/OUTCOMES

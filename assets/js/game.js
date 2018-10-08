@@ -18,7 +18,7 @@ console.log("randNum", randNum);
 // add logic to randomize the score value of the crystals for every doc reload
 // random number set for crystals
 var crystNum = Math.floor(Math.random() * (15 - 5) + 5);
-console.log("randNum for Cystral", crystNum);
+console.log("randNum for Crystal", crystNum);
 /* with each click on crystal, update score++ based on random crystNum value assigned to each cyrstal */
 $("#cryst1").click(function(){
 

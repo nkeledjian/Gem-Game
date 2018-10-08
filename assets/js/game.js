@@ -3,6 +3,8 @@
 // Default scores at game start
 var wins = 0;
 var loses = 0;
+// Player's current score
+var score = [];
 
 // generate random number for player to match with
 var gameNum = Math.floor(Math.random() * (70 - 40) + 40);

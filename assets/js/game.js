@@ -1,24 +1,25 @@
 // Crystal game
+
+// Default scores at game start
 var wins = 0;
 var loses = 0;
-var score = 0;
 
 // generate random number for player to match with
-var randNum = Math.floor(Math.random() * (70 - 20) + 20);
+var gameNum = Math.floor(Math.random() * (70 - 20) + 20);
 
 // DISPLAY ITEMS
 
 // display generated random number
 // randNum = document.innerHTML("number");
-console.log("randNum", randNum);
+console.log("randNum", gameNum);
 // -display crystals-
 
 
 // CRYSTAL LOGIC
 // add logic to randomize the score value of the crystals for every doc reload
 // random number set for crystals
-var crystNum = Math.floor(Math.random() * (15 - 5) + 5);
-console.log("randNum for Crystal", crystNum);
+var crysNum = Math.floor(Math.random() * (15 - 5) + 5);
+console.log("randNum for Crystal", crysNum);
 /* with each click on crystal, update score++ based on random crystNum value assigned to each cyrstal */
 $("#cryst1").click(function(){
 

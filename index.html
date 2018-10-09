@@ -5,53 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <title>Gem-Game</title>
 </head>
 <body>
 <div class="container">
     <div class="row">
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Welcome to the Gems Game!</h5>
-                        <p class="card-text">**Description of game rules - use the bootstrap class name identified as "card-text"**</p>
-                    </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Welcome to the Gems Game!</h5>
+                    <p class="card-text">Click on the gems and get to the match score.</p>
+                    <p class="card-text">Match the match score exactly to win.</p>
+                    <p class="card-text">Be careful, though! If you exceed the match score, you lose!</p>
+                    <p class="card-text">Have fun! :)</p>
                 </div>
-                
-                <div class="card">
-                    <div class="card-body">
-                        <h6 class="card-title">Score:</h6>
-                        <p class="card-text">Wins:<span id="wins">0</span></p>
-                        <p class="card-text">Losses:<span id="losses">0</span></p>
-                    </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Score:</h6>
+                    <p class="card-text">Wins:<span id="wins">0</span></p>
+                    <p class="card-text">Losses:<span id="losses">0</span></p>
                 </div>
+            </div>
 
-                <div class="card">
-                    <div="card-body">
-                        <h5 class="card-title">Match Score</h5>
-                        <p class="card-text"><span id="matchNum">0</span></p>
-                    </div>
-
+            <div class="card">
+                <div="card-body">
+                    <h5 class="card-title">Match Score</h5>
+                    <p class="card-text"><span id="matchNumCount">0</span></p>
                 </div>
-            </div>    
+            </div>
+        </div>    
            
         <div class="col-sm-6">
             <div class="card">
                 <div class="card-body">
-                    <button class="gem" id="gem1" value=0>
-                        <img src="">
+                    <button class="gem" value=0 id="gem1" >
+                        <img src="./assets/images/redGem.jpg">
                     </button>
-                    <button class="gem" id="gem1" value=1>
-                        <img src="">
+                    <button class="gem" value=1 id="gem2" >
+                        <img src="./assets/images/purpleGem.jpg">
                     </button>
-                    <button class="gem" id="gem1" value=2>
-                        <img src="">
+                    <button class="gem" value=2 id="gem3" >
+                        <img src="./assets/images/greenGem.jpg">
                     </button>
-                    <button class="gem" id="gem1" value=3>
-                        <img src="">
+                    <button class="gem" value=3 id="gem4" >
+                        <img src="./assets/images/emberGem.jpg">
                     </button>
                 </div>
             </div>
@@ -62,10 +62,11 @@
                 </div>
             </div>
         </div>    
-
     </div>
 </div>   
 </body>
+    <!-- load jQuery before javascript! -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./assets/js/game.js">
-    </script>
+    </script> 
 </html>

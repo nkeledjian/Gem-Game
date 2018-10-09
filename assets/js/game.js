@@ -8,51 +8,56 @@ $(document).ready(function() {
   var winsCount = $("#wins");
   var lossesCount = $("#losses");
   var gemVals=[0, 0, 0, 0];
-  var scoreCount=$("#score");
-  var matchNumCount=$("#matchNumCount")
-// Player's current score
-    function refresh(){
-      winsCount.text(wins);
-      lossesCount.text(losses);
-      matchNumCount.text(matchNum);
-      scoreCount.text(score);
-    }
+  var scoreCount = $("#score");
+  var matchNumCount = $("#matchNumCount")
 
+// Player's stats updated and displayed 
+  function refresh() {
+    winsCount.text(wins);
+    lossesCount.text(losses);
+    matchNumCount.text(matchNum);
+    scoreCount.text(score);
+  }
 
-// Refresh Match score and all gem values 
-// Function will provide random numbers for gems ranging from 1 to 10
-  function restart() {
-    for(var g=0; g<gemVals.length, g++) {
-      gemVals[i]=Math.floor(Math.random() * 10)) + 1);
-      }
-    // random number for matchNum ranging from 20 to 30
-      score = 0;
-      matchNum = Math.floor(Math.random() * 30) + 20);
-      refresh();
+// Function provides random numbers for gems ranging from 1 to 10 
+    function restart() {
+      $("#gem1").score = Math.floor(Math.random()* (10 - 1)) + 1;
+      $("#gem2").score = Math.floor(Math.random()* (10 - 1)) + 1;
+      $("#gem3").score = Math.floor(Math.random()* (10 - 1)) + 1;
+      $("#gem4").score = Math.floor(Math.random()* (10 - 1)) + 1;
+
+      // Create for loop? gemValues[i] for gemStone var?
+
+      // random number for matchNum ranging from 20 to 30 for match point
+        matchNum = Math.floor(Math.random() * (65 - 20)) + 20;
+        console.log("Match number", matchNum);
+        refresh(); // Refresh Match score and all gem values 
     }
 
     // Assign the values from gemVals to all 4 gems
-    $(".gem").click(function(){
-      // gem is borrowing the value produced by gemVals[i] - the given i, that is
-      var gem = gemVals[this.value];
-      score = score + gem;
+    $(".gem").click(function() {
+        // assign gemVals indices to variables
+        // var gem1 = gemVals[0];
+        // var gem2 = gemVals[1];
+        // var gem3 = gemVals[2];
+        // var gem4 = gemVals[3];
+        var gemStone = gemVals[this.value]; 
+        console.log("Gem Values", gemVals);
+        // gem values entered and accumulate the player's score
+        score = score + gemStone;
+        // If player score matches the match number, player wins!
         if(score == matchNum) {
           wins++
+          // enter win message
           restart();
         }
+        // If player surpasses match number, player losses!
         else if(score > matchNum) {
           losses++;
+          // enter lose message
           restart();
         }
-      refresh();
+        refresh();
     })
-  restart();
-})
-
-
-// GAME LOGIC/OUTCOMES
-/*if player total score matches the random number from the beginning of the game, display message "You win!" - add var wins++ to tally a player win. Reset doc to preserve wins score (NOT RELOAD!) */
-
-/*else if, player score exceeds random number at beginning, display message "You lose!" - add var loses++ to tally a player lose. Reset doc to preserve loses score (NOT RELOAD!) */
-
+    restart();
 }) // End document ready function

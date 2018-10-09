@@ -42,19 +42,21 @@ $(document).ready(function() {
         // var gem3 = gemVals[2];
         // var gem4 = gemVals[3];
         var gemStone = gemVals[this.value]; 
-        console.log("Gem Values", gemVals);
+        console.log("Gem Values", gemVals[this.value]);
         // gem values entered and accumulate the player's score
         score = score + gemStone;
         // If player score matches the match number, player wins!
         if(score == matchNum) {
           wins++
-          // enter win message
+          // win message
+          alert("You Win! Congrats!");
           restart();
         }
         // If player surpasses match number, player losses!
         else if(score > matchNum) {
           losses++;
-          // enter lose message
+          // lose message
+          alert("You Lose! Better Luck Next Time!");
           restart();
         }
         refresh();

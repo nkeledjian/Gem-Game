@@ -24,7 +24,7 @@ $(document).ready(function() {
       // $("#gem2").score = Math.floor(Math.random()* (10 - 1)) + 1;
       // $("#gem3").score = Math.floor(Math.random()* (10 - 1)) + 1;
       // $("#gem4").score = Math.floor(Math.random()* (10 - 1)) + 1;
-      // Avoided above convention to avoid multiple $(".gem").click(function() calls
+      /* Avoided above convention to avoid multiple $(".gem").click(function() { }) calls */
 
       // Loops through gemVals and assigns a random value to each gem
       for (var g = 0; g < gemVals.length; g++) {

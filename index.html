@@ -9,57 +9,70 @@
     <title>Gem-Game</title>
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Welcome to the Gems Game!</h5>
-                    <p class="card-text">Click on the gems and match up with the match score to win.</p>
-                    <p class="card-text">Be careful, though! If you exceed the match score, you lose!</p>
-                    <p class="card-text">Have fun! :)</p>
+        <div class="offset-2">
+        </div> 
+        <div class="col-sm-8">
+            <!-- <div class="card-columns"> -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Welcome to the Gems Game!</h5>
+                        <p class="card-text">Click on the gems and match up with the match score to win.</p>
+                        <p class="card-text">Be careful, though! If you exceed the match score, you lose!</p>
+                        <p class="card-text">Have fun! :)</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-body">
-                    <h6 class="card-title">Score:</h6>
-                    <p class="card-text">Wins:<span id="wins">0</span></p>
-                    <p class="card-text">Losses:<span id="losses">0</span></p>
+                
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Score:</h5>
+                        <p class="card-text">Wins:<span id="wins">0</span></p>
+                        <p class="card-text">Losses:<span id="losses">0</span></p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div="card-body">
-                    <h5 class="card-title">Match Score</h5>
-                    <p class="card-text"><span id="matchNumCount">0</span></p>
+                <div class="card">
+                    <div="card-body">
+                        <h5 class="card-title">Match Score</h5>
+                        <p class="card-text"><span id="matchNumCount">0</span></p>
+                    </div>
                 </div>
-            </div>
-        </div>    
-           
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                    <button class="gem" id="gem1">
-                        <img src="./assets/images/redGem.jpg">
-                    </button>
-                    <button class="gem" id="gem2">
-                        <img src="./assets/images/purpleGem.jpg">
-                    </button>
-                    <button class="gem" id="gem3">
-                        <img src="./assets/images/greenGem.jpg">
-                    </button>
-                    <button class="gem" id="gem4">
-                        <img src="./assets/images/emberGem.jpg">
-                    </button>
+            <!-- </div> -->
+        </div>
+        <div class="offset-2">
+        </div>     
+    </div> 
+    <div class="row">
+        <div class="offset-2">
+        </div>      
+        <div class="col-sm-8">
+            <!-- <div class="card-columns"> -->
+                <div class="card p-3 text-center">
+                    <div class="card-body">
+                        <button class="gem" id="gem1">
+                            <img src="./assets/images/redGem.jpg">
+                        </button>
+                        <button class="gem" id="gem2">
+                            <img src="./assets/images/purpleGem.jpg">
+                        </button>
+                        <button class="gem" id="gem3">
+                            <img src="./assets/images/greenGem.jpg">
+                        </button>
+                        <button class="gem" id="gem4">
+                            <img src="./assets/images/emberGem.jpg">
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h6 class="card-title">Your Score</h6>
-                    <p class="card-text"><span id="score">0</span></p>
+                <div class="card">
+                    <div class="card-body">
+                        <h6 class="card-title">Your Score</h6>
+                        <p class="card-text"><span id="score">0</span></p>
+                    </div>
                 </div>
-            </div>
+            <!-- </div> -->
+        </div>
+        <div class="offset-2">
         </div>    
     </div>
 </div>   

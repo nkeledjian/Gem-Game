@@ -45,7 +45,7 @@ $(document).ready(function() {
         var gemStone = gemVals[g]; 
         console.log("Gem Values", gemVals[g]);
         // gem values entered and accumulate the player's score
-        score = score + gemStone;
+        score += gemStone;
         // If player score matches the match number, player wins!
         if(score == matchNum) {
           wins++

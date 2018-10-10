@@ -24,13 +24,13 @@ $(document).ready(function() {
       // $("#gem2").score = Math.floor(Math.random()* (10 - 1)) + 1;
       // $("#gem3").score = Math.floor(Math.random()* (10 - 1)) + 1;
       // $("#gem4").score = Math.floor(Math.random()* (10 - 1)) + 1;
-      /* Avoided above convention to avoid multiple $(".gem").click(function() { }) calls */
+      // Avoided above to avoid multiple .click(function() { }) calls
 
       // Loops through gemVals and assigns a random value to each gem
       for (var g = 0; g < gemVals.length; g++) {
         gemVals[g] = Math.floor(Math.random()* (10-1)) + 1;
       }
-
+      console.log(gemVals);
       // random number for matchNum ranging from 20 to 30 for match point
       // Player's score is reset to 0
       score = 0;
@@ -42,8 +42,11 @@ $(document).ready(function() {
 
     // Assign the values from gemVals to all 4 gems
     $(".gem").click(function() {
-        var gemStone = gemVals[g]; 
-        console.log("Gem Values", gemVals[g]);
+        var gemStone = gemVals[this.value]; 
+        // if gem id == gem1
+        // assign to gemVals
+        console.log(this);
+        console.log("Gem Values", gemVals[this.value]);
         // gem values entered and accumulate the player's score
         score += gemStone;
         // If player score matches the match number, player wins!

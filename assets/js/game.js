@@ -20,12 +20,6 @@ $(document).ready(function() {
 
 // Function provides random numbers for gems ranging from 1 to 10 
     function restart() {
-      // $("#gem1").score = Math.floor(Math.random()* (10 - 1)) + 1;
-      // $("#gem2").score = Math.floor(Math.random()* (10 - 1)) + 1;
-      // $("#gem3").score = Math.floor(Math.random()* (10 - 1)) + 1;
-      // $("#gem4").score = Math.floor(Math.random()* (10 - 1)) + 1;
-      // Avoided above convention to avoid multiple .click(function() { }) calls
-
       // Loops through gemVals indices and assigns a random value to each gem
       for (var g = 0; g < gemVals.length; g++) {
         gemVals[g] = Math.floor(Math.random()* (10-1)) + 1;

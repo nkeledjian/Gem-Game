@@ -35,7 +35,7 @@ $(document).ready(function() {
     // Assign the values from gemVals to all 4 gems
     $(".gem").click(function() {
       // this points to html elements with the class "gem"
-      /* this.value allows for accessing indices of gemVals array - gemVals array is a global variable and is already populated with random numbers via function restart*/
+      /* this.value points to values assigned to each button element. This allows for accessing indices in the gemVals array populated with random numbers*/
         var gemStone = gemVals[this.value];
         // gem values entered and accumulate the player's score
         score += gemStone;

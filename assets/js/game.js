@@ -24,7 +24,7 @@ $(document).ready(function() {
       for (var g = 0; g < gemVals.length; g++) {
         gemVals[g] = Math.floor(Math.random()* (10-1)) + 1;
       }
-      // random number for matchNum ranging from 20 to 30 for match point
+      // random number for matchNum ranging from 20 to 65 for match point
       // Player's score is reset to 0
       score = 0;
       matchNum = Math.floor(Math.random() * (65 - 20)) + 20;

@@ -9,4 +9,4 @@ If you match the game score exactly, you win!
 
 Be careful; don't EXCEED the game score or you will lose!
 
-![Alt Text](https://media.giphy.com/media/wZFHklveePQEdcn5ev/giphy.gif)
+![Alt Text](https://media.giphy.com/media/6o4OHHjQRzJxy0LZYR/giphy.gif)

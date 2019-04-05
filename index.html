@@ -10,67 +10,70 @@
 </head>
 <body>
 <div class="container">
-    <div class="row">
-        <div class="offset-sm-2">
-        </div> 
-        <div class="col-sm-8">
-            <div class="card margin shadow cardBorder">
-                <div class="card-body">
-                    <h5 class="card-title">Welcome to the Gems Game!</h5>
-                    <p class="card-text">Click on the gems and match up with the match score to win.</p>
-                    <p class="card-text">Be careful, though! If you exceed the match score, you lose!</p>
-                    <p class="card-text">Have fun! :)</p>
-                </div>
-            </div>
-            
-            <div class="card margin shadow cardBorder">
-                <div class="card-body">
-                    <h5 class="card-title">Score:</h5>
-                    <p class="card-text">Wins: <span id="wins">0</span></p>
-                    <p class="card-text">Losses: <span id="losses">0</span></p>
-                </div>
-            </div>
+    <!-- <div class="row"> -->
 
-            <div class="card margin shadow cardBorder">
+            <!-- class='card' -->
+            <div class="margin shadow cardBorder">
+                <!-- class="card-body" -->
+                <div>
+                    <h5>Welcome to the Gems Game!</h5>
+                    <p>Click on the gems and match up with the match score to win.</p>
+                    <p>Be careful, though! If you exceed the match score, you lose!</p>
+                    <p>Have fun! :)</p>
+                </div>
+            </div>
+            <!-- class='card' -->
+            <div class="margin shadow cardBorder">
+                <!-- class="card-body" -->
+                <div>
+                    <h5>Score:</h5>
+                    <p>Wins: <span id="wins">0</span></p>
+                    <p>Losses: <span id="losses">0</span></p>
+                </div>
+            </div>
+            <!-- class='card' -->
+            <div class="margin shadow cardBorder">
                 <div="card-body">
-                    <h5 class="card-title" style="margin: 20px 0 5px 20px">Match Score:</h5>
-                    <p class="card-text" style="margin: 0 0 20px 20px"><span id="matchNumCount">0</span></p>
+                    <h5>Match Score:</h5>
+                    <p><span id="matchNumCount">0</span></p>
                 </div>
             </div>
-        </div>
-        <div class="offset-sm-2">
-        </div>     
-    </div> 
-    <div class="row">
-        <div class="offset-sm-3">
-        </div>      
-        <div class="col-sm-6">
-            <div class="card margin shadow cardBorder">
-                <div class="card-body">
+        <!-- </div> -->
+
+    <!-- </div>  -->
+    <!-- <div class="row"> -->
+
+        <!-- class="col-sm-8" -->
+        <div>
+            <!-- class="card  -->
+            <div class="shadow cardBorder">
+                <!-- class="card-body" -->
+                <div>
                     <h5 class="card-title">Your Score:</h5>
-                    <p class="card-text"><span id="score">0</span></p>
+                    <p><span id="score">0</span></p>
                 </div>
             </div>
-            <div class="card text-center margin shadow cardBorder">
-                <div class="card-body" style="margin: -10px 0 -13px 0">
-                    <button class="btn btn-sm gem" value=0>
+            <!-- class="card  -->
+            <div class="gem-container shadow cardBorder">
+                <!-- class="card-body" -->
+                <!-- <div class=""> -->
+                    <button class="gem" value=0>
                         <img src="./assets/images/redGem.jpg">
                     </button>
-                    <button class="btn btn-sm gem" value=1>
+                    <button class="gem" value=1>
                         <img src="./assets/images/purpleGem.jpg">
                     </button>
-                    <button class="btn btn-sm gem" value=2>
+                    <button class="gem" value=2>
                         <img src="./assets/images/greenGem.jpg">
                     </button>
-                    <button class="btn btn-sm gem" value=3>
+                    <button class="gem" value=3>
                         <img src="./assets/images/amberGem.jpg">
                     </button>
-                </div>
+                <!-- </div> -->
             </div>
         </div>
-        <div class="offset-sm-3">
-        </div>    
-    </div>
+        
+    <!-- </div> -->
 </div>   
 </body>
     <!-- load jQuery before javascript! -->

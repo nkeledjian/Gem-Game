@@ -1,8 +1,4 @@
-html {
-  height: 100%;
-}
 body {
-  height: 100vh;
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -16,7 +12,9 @@ body {
   background-size: cover;
 }
 
-h1,h2,h3,
+h1,
+h2,
+h3,
 p {
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -27,26 +25,25 @@ img {
   height: 20%;
 }
 
-.card{
-  border: 2px solid rgba(32, 178, 171, 0.705);
-}
-
 button {
   background: #f8d353;
   background: -webkit-linear-gradient(top left, #f8d353, #ff5c5a);
-  background: -moz-linear-gradient(top left, #f8d353, #ff5c5a);
-	background: linear-gradient(top left, #f8d353, #ff5c5a);
+  background: -moz-linear-gradient(bottom left, #f8d353, #ff5c5a);
+	background: linear-gradient(top right, #f8d353, #ff5c5a);
 }
 
 .container {
   display: flex;
-  flex-direction: column;
-  border: 10px solid rgba(32, 178, 171, 0.705);
+  /* border: 2px solid rgba(32, 178, 171, 0.705); */
   height: 100vh;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
-.gem {
-  width: calc(33.33333333% - 20px);
+.card {
+	flex: 1;
+	border: 2px solid rgba(181, 235, 232, 0.705);
+	width: calc(50% - 5px);
+	justify-content: center;
+	align-items: center;
 }

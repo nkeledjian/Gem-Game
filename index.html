@@ -1,83 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <title>Gem-Game</title>
-</head>
-<body>
-<div class="container">
-    <!-- <div class="row"> -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="margin cardBorder">
+        <h5>Welcome to the Gems Game!</h5>
+        <p>Click on the gems and match up with the match score to win.</p>
+        <p>Be careful, though! If you exceed the match score, you lose!</p>
+        <p>Have fun! :)</p>
+      </div>
 
-            <!-- class='card' -->
-            <div class="margin shadow cardBorder">
-                <!-- class="card-body" -->
-                <div>
-                    <h5>Welcome to the Gems Game!</h5>
-                    <p>Click on the gems and match up with the match score to win.</p>
-                    <p>Be careful, though! If you exceed the match score, you lose!</p>
-                    <p>Have fun! :)</p>
-                </div>
-            </div>
-            <!-- class='card' -->
-            <div class="margin shadow cardBorder">
-                <!-- class="card-body" -->
-                <div>
-                    <h5>Score:</h5>
-                    <p>Wins: <span id="wins">0</span></p>
-                    <p>Losses: <span id="losses">0</span></p>
-                </div>
-            </div>
-            <!-- class='card' -->
-            <div class="margin shadow cardBorder">
-                <div="card-body">
-                    <h5>Match Score:</h5>
-                    <p><span id="matchNumCount">0</span></p>
-                </div>
-            </div>
-        <!-- </div> -->
+      <div class="margin cardBorder">
+        <h5>Score:</h5>
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
+      </div>
 
-    <!-- </div>  -->
-    <!-- <div class="row"> -->
+      <div class="margin cardBorder">
+        <h5>Match Score:</h5>
+        <p><span id="matchNumCount">0</span></p>
+      </div>
 
-        <!-- class="col-sm-8" -->
-        <div>
-            <!-- class="card  -->
-            <div class="shadow cardBorder">
-                <!-- class="card-body" -->
-                <div>
-                    <h5 class="card-title">Your Score:</h5>
-                    <p><span id="score">0</span></p>
-                </div>
-            </div>
-            <!-- class="card  -->
-            <div class="gem-container shadow cardBorder">
-                <!-- class="card-body" -->
-                <!-- <div class=""> -->
-                    <button class="gem" value=0>
-                        <img src="./assets/images/redGem.jpg">
-                    </button>
-                    <button class="gem" value=1>
-                        <img src="./assets/images/purpleGem.jpg">
-                    </button>
-                    <button class="gem" value=2>
-                        <img src="./assets/images/greenGem.jpg">
-                    </button>
-                    <button class="gem" value=3>
-                        <img src="./assets/images/amberGem.jpg">
-                    </button>
-                <!-- </div> -->
-            </div>
-        </div>
-        
-    <!-- </div> -->
-</div>   
-</body>
-    <!-- load jQuery before javascript! -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./assets/js/game.js">
-    </script> 
+      <div class="cardBorder">
+        <h5>Your Score:</h5>
+        <p><span id="score">0</span></p>
+      </div>
+
+      <div class="gem-container cardBorder">
+        <button class="gem" value="0">
+          <img src="./assets/images/redGem.jpg" />
+        </button>
+        <button class="gem" value="1">
+          <img src="./assets/images/purpleGem.jpg" />
+        </button>
+        <button class="gem" value="2">
+          <img src="./assets/images/greenGem.jpg" />
+        </button>
+        <button class="gem" value="3">
+          <img src="./assets/images/amberGem.jpg" />
+        </button>
+      </div>
+    </div>
+    <!-- End container -->
+  </body>
+  <!-- load jQuery before javascript! -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./assets/js/game.js"></script>
 </html>

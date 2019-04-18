@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" /> -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <title>Gem-Game</title>
-  </head>
-  <body>
-    <div class="container">
 
-      <div class="card">
-        <h1>Welcome to the Gems Game!</h1>
-        <p>Click on the gems and match up with the match score to win.<br>
-        Be careful, though! If you exceed the match score, you lose!<br>
-        Have fun! :)</p>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" /> -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <title>Gem-Game</title>
+</head>
 
-      <div class="card">
-        <h1>Score:</h1>
-        <p>Wins: <span id="wins">0</span></p>
-        <p>Losses: <span id="losses">0</span></p>
-      </div>
+<body>
+  <div class="container">
 
-      <div class="card">
-        <h1>Match Score:</h1>
-        <p><span id="matchNumCount">0</span></p>
-      </div>
+    <div class="card">
+      <h1>Welcome to the Gems Game!</h1>
+      <p>Click on the gems and match the round score with the match score to win!
+      </p>
+    </div>
 
-      <div class="card">
+    <div class="card">
+      <h3>Wins & Losses:</h3>
+      <p>Wins: <span id="wins">0</span></p>
+      <p>Losses: <span id="losses">0</span></p>
+    </div>
+
+    <div class="card">
+      <h3>Match Score:</h3>
+      <p><span id="matchNumCount">0</span></p>
+      <h3>Round Score:</h3>
+      <p><span id="score">0</span></p>
+    </div>
+
+    <!-- <div class="card">
         <h1>Your Score:</h1>
         <p><span id="score">0</span></p>
-      </div>
+      </div> -->
 
-      <div class="card">
+    <!-- <div class="gem-card">
         <button class="gem" value="0">
           <img src="./assets/images/redGem.png"/>
         </button>
@@ -48,11 +51,28 @@
         <button class="gem" value="3">
           <img src="./assets/images/amberGem.png"/>
         </button>
-      </div>
+      </div> -->
 
-    </div><!-- End container -->
-  </body>
-  <!-- load jQuery before javascript! -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="./assets/js/game.js"></script>
+  </div><!-- End container -->
+  <div class="gem-container">
+    <div class="gem-card">
+      <button class="gem" value="0">
+        <img src="./assets/images/redGem.png" />
+      </button>
+      <button class="gem" value="1">
+        <img src="./assets/images/purpleGem.png" />
+      </button>
+      <button class="gem" value="2">
+        <img src="./assets/images/greenGem.png" />
+      </button>
+      <button class="gem" value="3">
+        <img src="./assets/images/amberGem.png" />
+      </button>
+    </div>
+  </div>
+</body>
+<!-- load jQuery before javascript! -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./assets/js/game.js"></script>
+
 </html>

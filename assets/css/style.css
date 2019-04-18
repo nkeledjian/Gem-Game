@@ -12,13 +12,17 @@ body {
   background-size: cover;
 }
 
-h1,
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+
 h2,
 h3,
 p {
   font-family: "Poppins", sans-serif;
   text-align: center;
-  font-size: 1em;
 }
 
 img {
@@ -35,10 +39,8 @@ button {
 
 .container {
   display: flex;
-  /* border: 2px solid rgba(32, 178, 171, 0.705); */
-  height: 100vh;
+  height: 50vh;
   flex-wrap: wrap;
-  /* flex-direction: column; */
   flex-direction: row;
 }
 
@@ -49,16 +51,22 @@ button {
 	justify-content: center;
 }
 
-.card > p > span, .card > p {
-  font-size: 1em
-}
-
-/* .info-card {
-  align-content: flex-end;
+.gem-container {
+  display: flex;
+  height: 50vh;
   flex-direction: row;
 }
 
 .gem-card {
-  align-content: center;
-  justify-content: column;
-}  */
+  flex: 1;
+	border: 2px solid rgba(181, 235, 232, 0.705);
+	width: calc(50% - 5px);
+	justify-content: center;
+} 
+
+.card > p > span, .card > p {
+  font-size: 1em
+}
+
+
+

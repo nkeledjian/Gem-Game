@@ -1,5 +1,12 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+body {
+  /* margin: 0;
+  padding: 0; */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background: #f8d353;
@@ -32,9 +39,9 @@ img {
 
 button {
   background: #f8d353;
-  background: -webkit-linear-gradient(top left, #f8d353, #ff5c5a);
+  /* background: -webkit-linear-gradient(top left, #f8d353, #ff5c5a);
   background: -moz-linear-gradient(bottom left, #f8d353, #ff5c5a);
-	background: linear-gradient(top right, #f8d353, #ff5c5a);
+	background: linear-gradient(top right, #f8d353, #ff5c5a); */
 }
 
 .container {
@@ -46,27 +53,40 @@ button {
 
 .card {
 	flex: 1;
-	border: 2px solid rgba(181, 235, 232, 0.705);
+	border: 1px solid rgba(0, 0, 0, 0.705);
 	width: calc(50% - 5px);
-	justify-content: center;
 }
 
 .gem-container {
   display: flex;
   height: 50vh;
   flex-direction: row;
+  /* align-content: center; */
 }
 
-.gem-card {
-  flex: 1;
-	border: 2px solid rgba(181, 235, 232, 0.705);
-	width: calc(50% - 5px);
-	justify-content: center;
-} 
+/* .gem-card {
+  padding-left: 10%;
+  padding-top: 10%;
+} */
 
 .card > p > span, .card > p {
-  font-size: 1em
+  font-size: 0.9em;
 }
 
+@media all and (orientation:portrait) {
+  .gem-card {
+    padding-left: 10%;
+    padding-top: 10%;
+  }
+}
 
+@media all and (orientation:landscape) { 
+  .gem {
+  flex: 1;
+	border: 1px solid rgba(0, 0, 0, 0.705);
+  width: calc(48% - 5px);
+  /* justify-content: center;
+  align-content: center; */
+} 
+}
 

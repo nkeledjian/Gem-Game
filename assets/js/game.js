@@ -7,15 +7,15 @@ $(document).ready(function() {
   var winsCount = $("#wins");
   var lossesCount = $("#losses");
   var gemVals=[0, 0, 0, 0];
-  var scoreCount = $("#score");
-  var matchNumCount = $("#matchNumCount")
+  var roundScore = $("#roundScore");
+  var matchScore = $("#matchScore")
 
 // Player's stats and match number updated and displayed 
     function refresh() {
       winsCount.text(wins);
       lossesCount.text(losses);
-      matchNumCount.text(matchNum);
-      scoreCount.text(score);
+      matchScore.text(matchNum);
+      roundScore.text(score);
     }
 
 // Function provides random numbers for gems ranging from 1 to 10 
